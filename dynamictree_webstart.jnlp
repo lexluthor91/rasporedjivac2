@@ -33,7 +33,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <jnlp spec="1.0+" 
-        codebase="https://github.com/lexluthor91/rasporedjivac"
+        codebase="https://github.com/lexluthor91/rasporedjivac2"
         href="dynamictree_webstart.jnlp">
     <information>
         <title>Rasporedjivac</title>
