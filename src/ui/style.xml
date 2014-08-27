@@ -1,0 +1,143 @@
+<synth>
+    <style id="backingStyle">
+        <opaque value="TRUE"/>
+        <font name="Dialog" size="12"/>
+        <state>
+            <color value="BLACK" type="BACKGROUND"/>
+            <color value="WHITE" type="FOREGROUND"/>
+        </state>
+    </style>
+    <bind style="backingStyle" type="region" key=".*"/>
+
+    <style id="SliderTrackStyle">
+        <opaque value="TRUE"/>
+        <state>
+            <color type="BACKGROUND" value="ORANGE"/>
+        </state>
+    </style>
+    <bind style="SliderTrackStyle" type="region" key="SliderTrack" />
+
+    <style id="SliderThumbStyle">
+        <opaque value="TRUE"/>
+        <state>
+            <color type="BACKGROUND" value="BLUE"/>
+        </state>
+        <state value="PRESSED">
+            <color type="BACKGROUND" value="GREEN"/>
+        </state>
+
+    </style>
+    <bind style="SliderThumbStyle" type="region" key="SliderThumb" />
+    
+    
+    <!-- ================================= -->
+	<!-- MENU BAR-->
+	<!-- ================================= -->
+	<style id="MenuBarStyle">
+	    <opaque value="TRUE"/>
+		<insets top="0" bottom="0" right="0" left="0" />
+		<state>
+			<color type="BACKGROUND" value="ORANGE"/>
+			
+		</state>
+	</style>
+	<bind style="MenuBarStyle" type="region" key="MenuBar" />
+
+	<!-- ================================= -->
+	<!-- MENU -->
+	<!-- ================================= -->
+	<style id="MenuStyle">
+	    <opaque value="TRUE"/>
+		<insets top="4" bottom="5" right="8" left="7" />
+		<state>
+			<color type="BACKGROUND" value="ORANGE"/>
+			<color value="BLACK" type="TEXT_FOREGROUND" />
+		</state>
+		<state value="DISABLED">
+			<color value="#CCCCCC" type="TEXT_FOREGROUND" />
+		</state>
+		<state value="SELECTED">
+		    <color type="BACKGROUND" value="#5C7D9C"/>
+			<color value="WHITE" type="TEXT_FOREGROUND" />
+		</state>
+	</style>
+	<bind style="MenuStyle" type="region" key="Menu" />
+
+	<!-- ================================= -->
+	<!-- MENU ITEM-->
+	<!-- ================================= -->
+	<style id="MenuItemStyle">
+	    <opaque value="TRUE"/>
+		<insets top="3" bottom="3" right="5" left="5" />
+		<state>
+		    <color type="BACKGROUND" value="ORANGE"/>
+			<font name="Arial" size="14" style="PLAIN" />
+			<color value="BLACK" type="TEXT_FOREGROUND" />
+		</state>
+		<state value="MOUSE_OVER">
+			<color type="BACKGROUND" value="#5C7D5C"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
+		</state>
+		<state value="SELECTED">
+			<color type="BACKGROUND" value="#5E7F9E"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
+		</state>
+		<state value="DISABLED">
+			<color value="#acb2b9" type="TEXT_FOREGROUND" />
+		</state>
+	</style>
+	<bind style="MenuItemStyle" type="region" key="MenuItem" />
+	<bind style="MenuItemStyle" type="region" key="RadioButtonMenuItem" />
+
+ <style id="button">
+        <!-- Shift the text one pixel when pressed -->
+    <property key="Button.textShiftOffset" type="integer" value="1"/>
+    <!-- set size of buttons -->
+    <insets top="15" left="20" bottom="15" right="20"/>
+    <state>
+      <imagePainter method="buttonBackground" path="images/button.png"
+                           sourceInsets="10 10 10 10" />
+      <font name="Dialog" size="16"/>
+      <color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+    </state>
+              
+    <state value="PRESSED"> 
+      <imagePainter method="buttonBackground"
+          path="images/button_press.png"
+                   sourceInsets="10 10 10 10" />
+    </state>
+            
+    <state value="MOUSE_OVER">    
+      <imagePainter method="buttonBackground"
+          path="images/button_over.png"
+                 sourceInsets="10 10 10 10" />
+    </state>
+  </style>
+  <bind style="button" type="region" key="Button"/>
+    
+    
+	
+	<!-- ================================= -->
+	<!-- MENU ITEM ACCELERATOR-->
+	<!-- ================================= >
+	<style id="MenuItemAcceleratorStyle">
+		<state>
+			<color value="#acb2b9" type="TEXT_FOREGROUND" />
+			<font name="Arial" size="12" style="PLAIN" />
+		</state>
+	</style>
+	<bind style="MenuItemAcceleratorStyle" type="region" key="MenuItemAccelerator" /-->
+
+	<!-- ================================= -->
+	<!-- POP UP MENU -->
+	<!-- ================================= >
+	<style id="PopupMenuStyle">
+		<insets top="0" bottom="9" right="5" left="5" />
+		<state>
+			<imagePainter method="PopupMenuBackground" path="distrib/resources/popup_menu_bg.png"
+				sourceInsets="0 9 9 9" />
+		</state>
+	</style>
+	<bind style="PopupMenuStyle" type="region" key="PopupMenu" /-->
+    
+</synth>
