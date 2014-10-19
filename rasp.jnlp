@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp
+        codebase="https://raw.githubusercontent.com/lexluthor91/rasporedjivac2/master" href="https://raw.githubusercontent.com/lexluthor91/rasporedjivac2/master/rasp.jnlp">
+        <information>
+                <title>Rasporedjivac</title>
+                <vendor>Dusan Stefanovic</vendor>
+                <description kind="short">Simulacija osnovnih algoritama rasporedjivanja</description>
+                <offline-allowed/>
+        </information>
+        <resources>
+                <j2se version="1.3+"/>
+        </resources>
+        <application-desc main-class="Animation"/>
+</jnlp>
